@@ -11,7 +11,7 @@ set :use_sudo,        false
 # server
 set :stage,           :production
 set :deploy_via,      :remote_cache
-set :deploy_to,       "/home/deploy/rails/#{fetch(:application)}"
+set :deploy_to,       "/home/omura/rails/#{fetch(:application)}"
 
 # puma
 set :puma_threads,    [4, 16]
