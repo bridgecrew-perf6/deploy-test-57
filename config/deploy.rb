@@ -38,6 +38,10 @@ set :ssh_options,     {
 set :rbenv_type, :user
 set :rbenv_ruby, '2.7.4'
 
+# ndenv
+set :ndenv_type, :user
+set :ndenv_node, '17.8.0'
+
 # environment
 set :linked_dirs, fetch(:linked_dirs, []).push(
   'log',
