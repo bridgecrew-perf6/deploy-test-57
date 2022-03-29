@@ -39,9 +39,10 @@ set :rbenv_type, :user
 set :rbenv_ruby, '2.7.4'
 
 # ndenv
-set :ndenv_type, :user
-set :ndenv_node, '17.8.0'
-
+set :nodenv_type, :user
+set :nodenv_node, '16.14.0'
+# set :nodenv_prefix, "NODENV_ROOT = #{ fetch (:nodenv_path)} NODENV_VERSION = #{ fetch (:nodenv_node)}  #{ fetch (:nodenv_path)} / bin / nodenv exec " 
+set :nodenv_roles, :all
 # environment
 set :linked_dirs, fetch(:linked_dirs, []).push(
   'log',
